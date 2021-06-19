@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A45372662AC8758C7CA5F00 /* Pods_PandaMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4E0BF843733EA032C1F597 /* Pods_PandaMovies.framework */; };
+		0E524DA40F1CC662C8DC3C13 /* Pods_PandaMovies_PandaMoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC56F8834F3F7CF395B10AA3 /* Pods_PandaMovies_PandaMoviesUITests.framework */; };
+		1D90601C267E731500ECCC55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90601B267E731500ECCC55 /* AppDelegate.swift */; };
+		1D906023267E731500ECCC55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D906021267E731500ECCC55 /* Main.storyboard */; };
+		1D906026267E731500ECCC55 /* PandaMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D906024267E731500ECCC55 /* PandaMovies.xcdatamodeld */; };
+		1D906028267E731600ECCC55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D906027267E731600ECCC55 /* Assets.xcassets */; };
+		1D90602B267E731600ECCC55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D906029267E731600ECCC55 /* LaunchScreen.storyboard */; };
+		1D906036267E731700ECCC55 /* PandaMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D906035267E731700ECCC55 /* PandaMoviesTests.swift */; };
+		1D906041267E731700ECCC55 /* PandaMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D906040267E731700ECCC55 /* PandaMoviesUITests.swift */; };
+		1D906079267E797300ECCC55 /* spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D906077267E797300ECCC55 /* spinner.swift */; };
+		1D90607A267E797300ECCC55 /* panda-eats-popcorn.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D906078267E797300ECCC55 /* panda-eats-popcorn.json */; };
+		1D906081267E79F900ECCC55 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90607F267E79F900ECCC55 /* Navigation.swift */; };
+		1D906082267E79F900ECCC55 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D906080267E79F900ECCC55 /* BaseController.swift */; };
+		1D906091267E7B1E00ECCC55 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90608F267E7B1D00ECCC55 /* String.swift */; };
+		1D906092267E7B1E00ECCC55 /* CustomFontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D906090267E7B1D00ECCC55 /* CustomFontStyles.swift */; };
+		1D906097267E7B2800ECCC55 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D906096267E7B2800ECCC55 /* Structs.swift */; };
+		1D9060A3267E7CDF00ECCC55 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90609E267E7CDF00ECCC55 /* HomePresenter.swift */; };
+		1D9060A4267E7CDF00ECCC55 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90609F267E7CDF00ECCC55 /* HomeProtocols.swift */; };
+		1D9060A5267E7CDF00ECCC55 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9060A0267E7CDF00ECCC55 /* HomeInteractor.swift */; };
+		1D9060A6267E7CDF00ECCC55 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9060A1267E7CDF00ECCC55 /* HomeView.swift */; };
+		1D9060A7267E7CDF00ECCC55 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9060A2267E7CDF00ECCC55 /* HomeWireFrame.swift */; };
+		ACC7DD7F387512DC639BD5DE /* Pods_PandaMoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C93634EB23ED39BF26999F /* Pods_PandaMoviesTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D906032267E731700ECCC55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D906010267E731500ECCC55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D906017267E731500ECCC55;
+			remoteInfo = PandaMovies;
+		};
+		1D90603D267E731700ECCC55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D906010267E731500ECCC55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D906017267E731500ECCC55;
+			remoteInfo = PandaMovies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FCC3AAC38D499BE6030AAC1 /* Pods-PandaMovies-PandaMoviesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaMovies-PandaMoviesUITests.release.xcconfig"; path = "Target Support Files/Pods-PandaMovies-PandaMoviesUITests/Pods-PandaMovies-PandaMoviesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		15C93634EB23ED39BF26999F /* Pods_PandaMoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaMoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B1D4DB2C46B56A941D20F94 /* Pods-PandaMoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaMoviesTests.release.xcconfig"; path = "Target Support Files/Pods-PandaMoviesTests/Pods-PandaMoviesTests.release.xcconfig"; sourceTree = "<group>"; };
+		1D906018267E731500ECCC55 /* PandaMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D90601B267E731500ECCC55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D906022267E731500ECCC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D906025267E731500ECCC55 /* PandaMovies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PandaMovies.xcdatamodel; sourceTree = "<group>"; };
+		1D906027267E731600ECCC55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D90602A267E731600ECCC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D90602C267E731600ECCC55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D906031267E731700ECCC55 /* PandaMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandaMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D906035267E731700ECCC55 /* PandaMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaMoviesTests.swift; sourceTree = "<group>"; };
+		1D906037267E731700ECCC55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D90603C267E731700ECCC55 /* PandaMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandaMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D906040267E731700ECCC55 /* PandaMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaMoviesUITests.swift; sourceTree = "<group>"; };
+		1D906042267E731700ECCC55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D906077267E797300ECCC55 /* spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spinner.swift; sourceTree = "<group>"; };
+		1D906078267E797300ECCC55 /* panda-eats-popcorn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "panda-eats-popcorn.json"; sourceTree = "<group>"; };
+		1D90607F267E79F900ECCC55 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		1D906080267E79F900ECCC55 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		1D90608F267E7B1D00ECCC55 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		1D906090267E7B1D00ECCC55 /* CustomFontStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFontStyles.swift; sourceTree = "<group>"; };
+		1D906096267E7B2800ECCC55 /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		1D90609E267E7CDF00ECCC55 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		1D90609F267E7CDF00ECCC55 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		1D9060A0267E7CDF00ECCC55 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		1D9060A1267E7CDF00ECCC55 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1D9060A2267E7CDF00ECCC55 /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
+		5B5307A3E0E7ECACADE307EB /* Pods-PandaMovies-PandaMoviesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaMovies-PandaMoviesUITests.debug.xcconfig"; path = "Target Support Files/Pods-PandaMovies-PandaMoviesUITests/Pods-PandaMovies-PandaMoviesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1376BFD474BA079F61D464A /* Pods-PandaMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaMovies.release.xcconfig"; path = "Target Support Files/Pods-PandaMovies/Pods-PandaMovies.release.xcconfig"; sourceTree = "<group>"; };
+		D93944BC4265B779805C9A25 /* Pods-PandaMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaMovies.debug.xcconfig"; path = "Target Support Files/Pods-PandaMovies/Pods-PandaMovies.debug.xcconfig"; sourceTree = "<group>"; };
+		EAAB99155A4DDAD618F2D26D /* Pods-PandaMoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaMoviesTests.debug.xcconfig"; path = "Target Support Files/Pods-PandaMoviesTests/Pods-PandaMoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC56F8834F3F7CF395B10AA3 /* Pods_PandaMovies_PandaMoviesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaMovies_PandaMoviesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4E0BF843733EA032C1F597 /* Pods_PandaMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D906015267E731500ECCC55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A45372662AC8758C7CA5F00 /* Pods_PandaMovies.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D90602E267E731700ECCC55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC7DD7F387512DC639BD5DE /* Pods_PandaMoviesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D906039267E731700ECCC55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E524DA40F1CC662C8DC3C13 /* Pods_PandaMovies_PandaMoviesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D90600F267E731500ECCC55 = {
+			isa = PBXGroup;
+			children = (
+				1D90601A267E731500ECCC55 /* PandaMovies */,
+				1D906034267E731700ECCC55 /* PandaMoviesTests */,
+				1D90603F267E731700ECCC55 /* PandaMoviesUITests */,
+				1D906019267E731500ECCC55 /* Products */,
+				DCB3F5E1F827B1D3302DADC6 /* Pods */,
+				AB6A9FC430AFE756E79FBAB3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D906019267E731500ECCC55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D906018267E731500ECCC55 /* PandaMovies.app */,
+				1D906031267E731700ECCC55 /* PandaMoviesTests.xctest */,
+				1D90603C267E731700ECCC55 /* PandaMoviesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D90601A267E731500ECCC55 /* PandaMovies */ = {
+			isa = PBXGroup;
+			children = (
+				1D90602C267E731600ECCC55 /* Info.plist */,
+				1D90601B267E731500ECCC55 /* AppDelegate.swift */,
+				1D906027267E731600ECCC55 /* Assets.xcassets */,
+				1D906024267E731500ECCC55 /* PandaMovies.xcdatamodeld */,
+				1D90607E267E79F900ECCC55 /* Common */,
+				1D906087267E7A2700ECCC55 /* Controllers */,
+				1D90606F267E792B00ECCC55 /* Utils */,
+			);
+			path = PandaMovies;
+			sourceTree = "<group>";
+		};
+		1D906034267E731700ECCC55 /* PandaMoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D906035267E731700ECCC55 /* PandaMoviesTests.swift */,
+				1D906037267E731700ECCC55 /* Info.plist */,
+			);
+			path = PandaMoviesTests;
+			sourceTree = "<group>";
+		};
+		1D90603F267E731700ECCC55 /* PandaMoviesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1D906040267E731700ECCC55 /* PandaMoviesUITests.swift */,
+				1D906042267E731700ECCC55 /* Info.plist */,
+			);
+			path = PandaMoviesUITests;
+			sourceTree = "<group>";
+		};
+		1D90606F267E792B00ECCC55 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1D906096267E7B2800ECCC55 /* Structs.swift */,
+				1D9060AF267E837100ECCC55 /* Cells */,
+				1D90608E267E7AAE00ECCC55 /* Extensions */,
+				1D906086267E7A0100ECCC55 /* Storyboards */,
+				1D906076267E797300ECCC55 /* Spinner */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1D906076267E797300ECCC55 /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				1D906077267E797300ECCC55 /* spinner.swift */,
+				1D906078267E797300ECCC55 /* panda-eats-popcorn.json */,
+			);
+			path = Spinner;
+			sourceTree = "<group>";
+		};
+		1D90607E267E79F900ECCC55 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1D90607F267E79F900ECCC55 /* Navigation.swift */,
+				1D906080267E79F900ECCC55 /* BaseController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1D906086267E7A0100ECCC55 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1D906021267E731500ECCC55 /* Main.storyboard */,
+				1D906029267E731600ECCC55 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1D906087267E7A2700ECCC55 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D9060AB267E7CE800ECCC55 /* Home */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1D90608E267E7AAE00ECCC55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D906090267E7B1D00ECCC55 /* CustomFontStyles.swift */,
+				1D90608F267E7B1D00ECCC55 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1D9060AB267E7CE800ECCC55 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1D90609E267E7CDF00ECCC55 /* HomePresenter.swift */,
+				1D90609F267E7CDF00ECCC55 /* HomeProtocols.swift */,
+				1D9060A0267E7CDF00ECCC55 /* HomeInteractor.swift */,
+				1D9060A1267E7CDF00ECCC55 /* HomeView.swift */,
+				1D9060A2267E7CDF00ECCC55 /* HomeWireFrame.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1D9060AF267E837100ECCC55 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AB6A9FC430AFE756E79FBAB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC4E0BF843733EA032C1F597 /* Pods_PandaMovies.framework */,
+				EC56F8834F3F7CF395B10AA3 /* Pods_PandaMovies_PandaMoviesUITests.framework */,
+				15C93634EB23ED39BF26999F /* Pods_PandaMoviesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCB3F5E1F827B1D3302DADC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D93944BC4265B779805C9A25 /* Pods-PandaMovies.debug.xcconfig */,
+				A1376BFD474BA079F61D464A /* Pods-PandaMovies.release.xcconfig */,
+				5B5307A3E0E7ECACADE307EB /* Pods-PandaMovies-PandaMoviesUITests.debug.xcconfig */,
+				0FCC3AAC38D499BE6030AAC1 /* Pods-PandaMovies-PandaMoviesUITests.release.xcconfig */,
+				EAAB99155A4DDAD618F2D26D /* Pods-PandaMoviesTests.debug.xcconfig */,
+				1B1D4DB2C46B56A941D20F94 /* Pods-PandaMoviesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D906017267E731500ECCC55 /* PandaMovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D906045267E731700ECCC55 /* Build configuration list for PBXNativeTarget "PandaMovies" */;
+			buildPhases = (
+				3DF805A3703E3F0AB78FDB46 /* [CP] Check Pods Manifest.lock */,
+				1D906014267E731500ECCC55 /* Sources */,
+				1D906015267E731500ECCC55 /* Frameworks */,
+				1D906016267E731500ECCC55 /* Resources */,
+				D5D4D37B05C9064F1E5251EA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PandaMovies;
+			productName = PandaMovies;
+			productReference = 1D906018267E731500ECCC55 /* PandaMovies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D906030267E731700ECCC55 /* PandaMoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D906048267E731700ECCC55 /* Build configuration list for PBXNativeTarget "PandaMoviesTests" */;
+			buildPhases = (
+				708176CFB8B70849D16C1831 /* [CP] Check Pods Manifest.lock */,
+				1D90602D267E731700ECCC55 /* Sources */,
+				1D90602E267E731700ECCC55 /* Frameworks */,
+				1D90602F267E731700ECCC55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D906033267E731700ECCC55 /* PBXTargetDependency */,
+			);
+			name = PandaMoviesTests;
+			productName = PandaMoviesTests;
+			productReference = 1D906031267E731700ECCC55 /* PandaMoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1D90603B267E731700ECCC55 /* PandaMoviesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D90604B267E731700ECCC55 /* Build configuration list for PBXNativeTarget "PandaMoviesUITests" */;
+			buildPhases = (
+				F31704816BF8CC2C3B438024 /* [CP] Check Pods Manifest.lock */,
+				1D906038267E731700ECCC55 /* Sources */,
+				1D906039267E731700ECCC55 /* Frameworks */,
+				1D90603A267E731700ECCC55 /* Resources */,
+				C8CB361E17E470592E4C5A7D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D90603E267E731700ECCC55 /* PBXTargetDependency */,
+			);
+			name = PandaMoviesUITests;
+			productName = PandaMoviesUITests;
+			productReference = 1D90603C267E731700ECCC55 /* PandaMoviesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D906010267E731500ECCC55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1D906017267E731500ECCC55 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1D906030267E731700ECCC55 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1D906017267E731500ECCC55;
+					};
+					1D90603B267E731700ECCC55 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1D906017267E731500ECCC55;
+					};
+				};
+			};
+			buildConfigurationList = 1D906013267E731500ECCC55 /* Build configuration list for PBXProject "PandaMovies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D90600F267E731500ECCC55;
+			productRefGroup = 1D906019267E731500ECCC55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D906017267E731500ECCC55 /* PandaMovies */,
+				1D906030267E731700ECCC55 /* PandaMoviesTests */,
+				1D90603B267E731700ECCC55 /* PandaMoviesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D906016267E731500ECCC55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D90602B267E731600ECCC55 /* LaunchScreen.storyboard in Resources */,
+				1D906028267E731600ECCC55 /* Assets.xcassets in Resources */,
+				1D906023267E731500ECCC55 /* Main.storyboard in Resources */,
+				1D90607A267E797300ECCC55 /* panda-eats-popcorn.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D90602F267E731700ECCC55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D90603A267E731700ECCC55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DF805A3703E3F0AB78FDB46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PandaMovies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		708176CFB8B70849D16C1831 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PandaMoviesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8CB361E17E470592E4C5A7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PandaMovies-PandaMoviesUITests/Pods-PandaMovies-PandaMoviesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PandaMovies-PandaMoviesUITests/Pods-PandaMovies-PandaMoviesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PandaMovies-PandaMoviesUITests/Pods-PandaMovies-PandaMoviesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5D4D37B05C9064F1E5251EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PandaMovies/Pods-PandaMovies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PandaMovies/Pods-PandaMovies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PandaMovies/Pods-PandaMovies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F31704816BF8CC2C3B438024 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PandaMovies-PandaMoviesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D906014267E731500ECCC55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D90601C267E731500ECCC55 /* AppDelegate.swift in Sources */,
+				1D906097267E7B2800ECCC55 /* Structs.swift in Sources */,
+				1D9060A6267E7CDF00ECCC55 /* HomeView.swift in Sources */,
+				1D906092267E7B1E00ECCC55 /* CustomFontStyles.swift in Sources */,
+				1D9060A5267E7CDF00ECCC55 /* HomeInteractor.swift in Sources */,
+				1D9060A3267E7CDF00ECCC55 /* HomePresenter.swift in Sources */,
+				1D9060A4267E7CDF00ECCC55 /* HomeProtocols.swift in Sources */,
+				1D906081267E79F900ECCC55 /* Navigation.swift in Sources */,
+				1D906026267E731500ECCC55 /* PandaMovies.xcdatamodeld in Sources */,
+				1D906082267E79F900ECCC55 /* BaseController.swift in Sources */,
+				1D9060A7267E7CDF00ECCC55 /* HomeWireFrame.swift in Sources */,
+				1D906091267E7B1E00ECCC55 /* String.swift in Sources */,
+				1D906079267E797300ECCC55 /* spinner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D90602D267E731700ECCC55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D906036267E731700ECCC55 /* PandaMoviesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D906038267E731700ECCC55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D906041267E731700ECCC55 /* PandaMoviesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D906033267E731700ECCC55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D906017267E731500ECCC55 /* PandaMovies */;
+			targetProxy = 1D906032267E731700ECCC55 /* PBXContainerItemProxy */;
+		};
+		1D90603E267E731700ECCC55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D906017267E731500ECCC55 /* PandaMovies */;
+			targetProxy = 1D90603D267E731700ECCC55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1D906021267E731500ECCC55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D906022267E731500ECCC55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D906029267E731600ECCC55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D90602A267E731600ECCC55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D906043267E731700ECCC55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D906044267E731700ECCC55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D906046267E731700ECCC55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D93944BC4265B779805C9A25 /* Pods-PandaMovies.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3ZJ89CH4T;
+				INFOPLIST_FILE = PandaMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Arlin-Ropero.PandaMovies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D906047267E731700ECCC55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1376BFD474BA079F61D464A /* Pods-PandaMovies.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3ZJ89CH4T;
+				INFOPLIST_FILE = PandaMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Arlin-Ropero.PandaMovies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1D906049267E731700ECCC55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAAB99155A4DDAD618F2D26D /* Pods-PandaMoviesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3ZJ89CH4T;
+				INFOPLIST_FILE = PandaMoviesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Arlin-Ropero.PandaMoviesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PandaMovies.app/PandaMovies";
+			};
+			name = Debug;
+		};
+		1D90604A267E731700ECCC55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B1D4DB2C46B56A941D20F94 /* Pods-PandaMoviesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3ZJ89CH4T;
+				INFOPLIST_FILE = PandaMoviesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Arlin-Ropero.PandaMoviesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PandaMovies.app/PandaMovies";
+			};
+			name = Release;
+		};
+		1D90604C267E731700ECCC55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B5307A3E0E7ECACADE307EB /* Pods-PandaMovies-PandaMoviesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3ZJ89CH4T;
+				INFOPLIST_FILE = PandaMoviesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Arlin-Ropero.PandaMoviesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PandaMovies;
+			};
+			name = Debug;
+		};
+		1D90604D267E731700ECCC55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FCC3AAC38D499BE6030AAC1 /* Pods-PandaMovies-PandaMoviesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3ZJ89CH4T;
+				INFOPLIST_FILE = PandaMoviesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Arlin-Ropero.PandaMoviesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PandaMovies;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D906013267E731500ECCC55 /* Build configuration list for PBXProject "PandaMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D906043267E731700ECCC55 /* Debug */,
+				1D906044267E731700ECCC55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D906045267E731700ECCC55 /* Build configuration list for PBXNativeTarget "PandaMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D906046267E731700ECCC55 /* Debug */,
+				1D906047267E731700ECCC55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D906048267E731700ECCC55 /* Build configuration list for PBXNativeTarget "PandaMoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D906049267E731700ECCC55 /* Debug */,
+				1D90604A267E731700ECCC55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D90604B267E731700ECCC55 /* Build configuration list for PBXNativeTarget "PandaMoviesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D90604C267E731700ECCC55 /* Debug */,
+				1D90604D267E731700ECCC55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1D906024267E731500ECCC55 /* PandaMovies.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1D906025267E731500ECCC55 /* PandaMovies.xcdatamodel */,
+			);
+			currentVersion = 1D906025267E731500ECCC55 /* PandaMovies.xcdatamodel */;
+			path = PandaMovies.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1D906010267E731500ECCC55 /* Project object */;
+}

@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (5.4.3)
+  - FBSDKCoreKit (9.3.0):
+    - FBSDKCoreKit/Basics (= 9.3.0)
+    - FBSDKCoreKit/Core (= 9.3.0)
+  - FBSDKCoreKit/Basics (9.3.0)
+  - FBSDKCoreKit/Core (9.3.0):
+    - FBSDKCoreKit/Basics
+  - GRDB.swift (5.8.0):
+    - GRDB.swift/standard (= 5.8.0)
+  - GRDB.swift/standard (5.8.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - lottie-ios (3.2.3)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - FBSDKCoreKit
+  - GRDB.swift
+  - IQKeyboardManagerSwift
+  - lottie-ios
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FBSDKCoreKit
+    - GRDB.swift
+    - IQKeyboardManagerSwift
+    - lottie-ios
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  FBSDKCoreKit: 0d1ae58388a458b8222f72025804cdc84eb5d0c3
+  GRDB.swift: 9b9beec114435e1d852ad68c136cff4c71134627
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 48eac47e75c6b7a1806f0051aca4ad68ee6f93c8
+
+COCOAPODS: 1.10.0
