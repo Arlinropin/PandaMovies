@@ -18,7 +18,7 @@ class Spinner: UIViewController {
     static func showSpinner(){
         let currentController = Navigation.getCurrentController()
         viewBack.frame = UIScreen.main.bounds
-        viewBack.backgroundColor = UIColor.white.withAlphaComponent(0.95)
+        viewBack.backgroundColor = UIColor.white.withAlphaComponent(0.85)
 
         spinner = .init(name: "panda-eats-popcorn")
         spinner!.frame = UIScreen.main.bounds

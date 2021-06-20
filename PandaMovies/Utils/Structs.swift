@@ -15,7 +15,22 @@ enum Errors {
     case other
 }
 
+struct ModalText {
+    var title: String
+    var message: String
+}
+
+// MARK: Celda
+struct Cell {
+    var id: String
+    var label: String
+    var value: Any
+    var objects: Any
+    var cellType: CellType
+}
+
 enum CellType: String {
-    case USER_CELL = "UserTableViewCell"
-    case POST_CELL = "PostTableViewCell"
+    case POSTER_CELL = "PosterCollectionViewCell"
+    case COLLECTION_CELL = "CollectionTableViewCell"
+    case SEARCH_CELL = "SearchTableViewCell"
 }

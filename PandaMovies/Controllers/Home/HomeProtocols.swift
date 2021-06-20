@@ -12,6 +12,7 @@ import UIKit
 protocol HomeViewProtocol: class {
     // PRESENTER -> VIEW
     var presenter: HomePresenterProtocol? { get set }
+    func showModal(texts: ModalText)
 }
 
 protocol HomeWireFrameProtocol: class {
@@ -26,6 +27,7 @@ protocol HomePresenterProtocol: class {
     var wireFrame: HomeWireFrameProtocol? { get set }
     
     func viewDidLoad()
+    func getMovies(page: Int, callback: @escaping ([Movie])->Void)
 }
 
 protocol HomeInteractorOutputProtocol: class {
@@ -35,6 +37,7 @@ protocol HomeInteractorOutputProtocol: class {
 protocol HomeInteractorInputProtocol: class {
     // PRESENTER -> INTERACTOR
     var presenter: HomeInteractorOutputProtocol? { get set }
+    func getMovies(page: Int, callbackSuccess: @escaping ([Movie])->Void, callbackFail: @escaping (Errors)->Void)
 }
 
 

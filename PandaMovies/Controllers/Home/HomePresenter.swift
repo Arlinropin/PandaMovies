@@ -15,6 +15,12 @@ class HomePresenter  {
     var interactor: HomeInteractorInputProtocol?
     var wireFrame: HomeWireFrameProtocol?
     
+    func getMovies(page: Int, callback: @escaping ([Movie])->Void){
+        interactor!.getMovies(page: page, callbackSuccess: callback, callbackFail: { [self] error in
+            view!.showModal(texts: ModalText(title: "¡Oops!", message: "Hubo un error en el proceso."))
+        })
+    }
+    
 }
 
 extension HomePresenter: HomePresenterProtocol {

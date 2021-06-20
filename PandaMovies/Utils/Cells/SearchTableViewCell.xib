@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="PandaMovies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ThZ-Sw-i51">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMM-Of-L24">
+                                <rect key="frame" x="240" y="15" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DMM-Of-L24" secondAttribute="height" multiplier="1:1" id="1KO-et-dhj"/>
+                                </constraints>
+                                <state key="normal" image="PandaSearch"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search ..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oFQ-KV-nUy">
+                                <rect key="frame" x="30" y="15" width="195" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FLr-gf-bw6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" name="Color_Yellow"/>
+                        <constraints>
+                            <constraint firstAttribute="top" secondItem="oFQ-KV-nUy" secondAttribute="top" constant="-15" id="2sq-27-5fq"/>
+                            <constraint firstItem="DMM-Of-L24" firstAttribute="centerY" secondItem="oFQ-KV-nUy" secondAttribute="centerY" id="Cm6-Ug-2rj"/>
+                            <constraint firstAttribute="bottom" secondItem="oFQ-KV-nUy" secondAttribute="bottom" constant="15" id="KSu-an-YC2"/>
+                            <constraint firstItem="oFQ-KV-nUy" firstAttribute="leading" secondItem="ThZ-Sw-i51" secondAttribute="leading" constant="30" id="Z1D-Ts-AJR"/>
+                            <constraint firstItem="DMM-Of-L24" firstAttribute="leading" secondItem="oFQ-KV-nUy" secondAttribute="trailing" constant="15" id="bOa-K6-brc"/>
+                            <constraint firstItem="DMM-Of-L24" firstAttribute="top" secondItem="oFQ-KV-nUy" secondAttribute="top" id="exD-5E-Y2y"/>
+                            <constraint firstAttribute="trailing" secondItem="DMM-Of-L24" secondAttribute="trailing" constant="30" id="xad-s1-ImP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ThZ-Sw-i51" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6ce-KT-knK"/>
+                    <constraint firstItem="ThZ-Sw-i51" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KdW-cl-PvK"/>
+                    <constraint firstItem="ThZ-Sw-i51" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="md7-z6-6qk"/>
+                    <constraint firstItem="ThZ-Sw-i51" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vFZ-PK-dnn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="button" destination="DMM-Of-L24" id="Q4Z-lS-1UK"/>
+                <outlet property="textfield" destination="oFQ-KV-nUy" id="Y3C-oG-UeF"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="138.95089285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PandaSearch" width="500" height="500"/>
+        <namedColor name="Color_Yellow">
+            <color red="0.88627450980392153" green="0.73333333333333328" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

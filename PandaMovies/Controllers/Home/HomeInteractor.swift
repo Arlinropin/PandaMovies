@@ -12,6 +12,11 @@ class HomeInteractor: HomeInteractorInputProtocol {
 
     // MARK: Properties
     weak var presenter: HomeInteractorOutputProtocol?
-
+    
+    func getMovies(page: Int, callbackSuccess: @escaping ([Movie])->Void, callbackFail: @escaping (Errors)->Void) {
+        Webservices.getMovies(page: page, callbackSuccess: {movies in
+            callbackSuccess(movies)
+        }, callbackFail: callbackFail)
+    }
 }
 
