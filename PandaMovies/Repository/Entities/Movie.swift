@@ -17,11 +17,11 @@ class Movie {
     var vote_count : Int
     var video : Bool
     var backdrop_path : String
-    var vote_average : Int
+    var vote_average : Double
     var poster_path : String
     var release_date : String
     var id : String
-    var popularity : Float
+    var popularity : Double
     var genre_ids : [Int] = []
     var original_language : String
     var poster_image: UIImage
@@ -37,12 +37,12 @@ class Movie {
         video = json["video"].boolValue
         backdrop_path = json["backdrop_path"].stringValue
         paths.append(backdrop_path)
-        vote_average = json["vote_average"].intValue
+        vote_average = json["vote_average"].doubleValue
         poster_path = json["poster_path"].stringValue
         paths.append(poster_path)
         release_date = json["release_date"].stringValue
         id = json["id"].stringValue
-        popularity = json["popularity"].floatValue
+        popularity = json["popularity"].doubleValue
         let genreIds = json["genre_ids"].arrayValue
         for item in genreIds{
             genre_ids.append(item.intValue)

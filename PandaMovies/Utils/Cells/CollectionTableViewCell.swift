@@ -18,12 +18,12 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     var movies: [Movie] = []
     var backwardCallback: (()->Void)?
     var forwardCallback: (()->Void)?
-    
+    var movieCallback: ((Movie)->Void)?
     
     func initWithData(page: Int, movies: [Movie], height: CGFloat)  {
         pageLabel.text = "Page " + "\(page)"
         self.movies = movies
-        heigthCollection.constant = height - 50
+        heigthCollection.constant = height - 55
         collection.reloadData()
         backwardButton.isHidden = page == 1
         
@@ -45,6 +45,10 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellType.POSTER_CELL.rawValue, for: indexPath) as! PosterCollectionViewCell
         cell.initWithData(image: obj.poster_image, label:  obj.title)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        movieCallback!(movies[indexPath.row])
     }
     
     func collectionView(_ collectionView: UICollectionView,

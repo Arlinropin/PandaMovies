@@ -33,4 +33,6 @@ enum CellType: String {
     case POSTER_CELL = "PosterCollectionViewCell"
     case COLLECTION_CELL = "CollectionTableViewCell"
     case SEARCH_CELL = "SearchTableViewCell"
+    case OVERVIEW_CELL = "DescriptionTableViewCell"
+    case TITLE_CELL = "TitleTableViewCell"
 }
