@@ -17,7 +17,7 @@ class HomeView: BaseController, UITextFieldDelegate, UITableViewDelegate, UITabl
     var presenter: HomePresenterProtocol?
 
     var cells: [Cell] = []
-    var cellHidden: [Cell] = []
+    var currentMovies: [Movie] = []
     var page: Int = 1
     var movieToSearch: String = ""
     var search: Search?
@@ -34,27 +34,29 @@ class HomeView: BaseController, UITextFieldDelegate, UITableViewDelegate, UITabl
     }
     
     func setList(){
-        cells = cellHidden
+        cells = []
         backButton.isHidden = true
         cells.append(Cell(id: "title", value: "", objects: "", cellType: .TITLE_CELL))
         cells.append(Cell(id: "search", value: movieToSearch, objects: "", cellType: .SEARCH_CELL))
-        cells.append(Cell(id: "movies", value: "", objects: [] as [Movie], cellType: .COLLECTION_CELL))
+        cells.append(Cell(id: "movies", value: "", objects: currentMovies, cellType: .COLLECTION_CELL))
         table.backgroundColor = UIColor(named: "AccentColor")
+        self.view.backgroundColor = UIColor(named: "Color_Blue")
         table.isScrollEnabled = false
     }
     
     func setOverview(_ movie: Movie){
-        cellHidden = cells
+        currentMovies = cells.first(where: {$0.id == "movies"})?.objects as! [Movie]
         backButton.isHidden = false
         cells = []
         cells.append(Cell(id: "overview", value: "", objects: movie, cellType: .OVERVIEW_CELL))
         table.reloadSections(IndexSet(integer: 0), with: .left)
         table.backgroundColor = movie.color_average_backdrop
+        self.view.backgroundColor = movie.color_average_backdrop
         table.isScrollEnabled = true
     }
     
     func getMovies(page: Int, move: Movement) {
-        Navigation.showSpinner()
+        Navigation.showSpinner(message: "Loading ...")
         presenter!.getMovies(page: page, move: move, callback: { [self] movies in
             if let index = cells.firstIndex(where: {$0.id == "movies"}){
                 cells[index].objects = movies
@@ -66,7 +68,7 @@ class HomeView: BaseController, UITextFieldDelegate, UITableViewDelegate, UITabl
     }
     
     func searchMovie(move: Movement) {
-        Navigation.showSpinner()
+        Navigation.showSpinner(message: "Looking for your movie ...")
         presenter!.searchMovie(word: movieToSearch, search: search, move: move, callback: { [self] search in
             self.search = search
             if let index = cells.firstIndex(where: {$0.id == "movies"}){
@@ -91,7 +93,7 @@ class HomeView: BaseController, UITextFieldDelegate, UITableViewDelegate, UITabl
             return cell
         case .COLLECTION_CELL:
             let cell = tableView.dequeueReusableCell(withIdentifier: obj.cellType.rawValue, for: indexPath) as! CollectionTableViewCell
-            cell.initWithData(page: page, movies: obj.objects as! [Movie], height: tableView.frame.height - 190)
+            cell.initWithData(page: page, movies: obj.objects as! [Movie], height: tableView.frame.height - 150)
             cell.backwardCallback = { [self] in presenter!.setPageAndGetMovies(isForward: false, search: search, page: page)}
             cell.forwardCallback = { [self] in presenter!.setPageAndGetMovies(isForward: true, search: search, page: page)}
             cell.movieCallback = {movie in self.setOverview(movie)}

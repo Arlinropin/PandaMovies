@@ -209,12 +209,12 @@
 		1D90606F267E792B00ECCC55 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				1DB55D50267ED8BE00C0973A /* Modal */,
 				1D906096267E7B2800ECCC55 /* Structs.swift */,
 				1D9060AF267E837100ECCC55 /* Cells */,
 				1D90608E267E7AAE00ECCC55 /* Extensions */,
-				1D906086267E7A0100ECCC55 /* Storyboards */,
+				1DB55D50267ED8BE00C0973A /* Modal */,
 				1D906076267E797300ECCC55 /* Spinner */,
+				1D906086267E7A0100ECCC55 /* Storyboards */,
 			);
 			path = Utils;
 			sourceTree = "<group>";

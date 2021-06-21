@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PyH-0d-fns">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="tx6-mR-0dm"/>
@@ -43,7 +43,7 @@
                         <constraints>
                             <constraint firstItem="PyH-0d-fns" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="F0X-fl-zcQ"/>
                             <constraint firstItem="PyH-0d-fns" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bXY-0k-LHk"/>
-                            <constraint firstAttribute="bottom" secondItem="PyH-0d-fns" secondAttribute="bottom" id="d5f-qT-VZ1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PyH-0d-fns" secondAttribute="bottom" id="d5f-qT-VZ1"/>
                             <constraint firstItem="iYZ-bZ-hGi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="dsC-9O-Reh"/>
                             <constraint firstItem="PyH-0d-fns" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hEk-NI-hS6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iYZ-bZ-hGi" secondAttribute="bottom" constant="30" id="xYf-UT-pid"/>

@@ -37,8 +37,8 @@ class Navigation {
         })
     }
     
-    static func showSpinner() {
-        Spinner.showSpinner()
+    static func showSpinner(message: String) {
+        Spinner.showSpinner(message: message)
     }
     
     static func closeSpinner(_ completion: @escaping (() -> Void) = {}) {

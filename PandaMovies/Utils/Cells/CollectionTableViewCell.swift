@@ -23,7 +23,7 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     func initWithData(page: Int, movies: [Movie], height: CGFloat)  {
         pageLabel.text = "Page " + "\(page)"
         self.movies = movies
-        heigthCollection.constant = height - 55
+        heigthCollection.constant = height - 45
         collection.reloadData()
         backwardButton.isHidden = page == 1
     }

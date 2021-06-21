@@ -36,7 +36,7 @@ class HomeInteractor: HomeInteractorInputProtocol {
     }
     
     func setPage(_ page: Int,_ move: Movement,_ totalPages: Int = 0) -> Int {
-        var page = 1
+        var page = page
         if totalPages > 0 {
             page = move == .forward ? (totalPages > page ? page + 1: page) : (page > 1 ? page - 1 : page)
         } else {
