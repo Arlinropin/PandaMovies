@@ -13,6 +13,8 @@ protocol HomeViewProtocol: class {
     // PRESENTER -> VIEW
     var presenter: HomePresenterProtocol? { get set }
     func showModal(texts: ModalText)
+    func getMovies(page: Int, move: Movement)
+    func searchMovie(move: Movement)
 }
 
 protocol HomeWireFrameProtocol: class {
@@ -27,7 +29,9 @@ protocol HomePresenterProtocol: class {
     var wireFrame: HomeWireFrameProtocol? { get set }
     
     func viewDidLoad()
-    func getMovies(page: Int, callback: @escaping ([Movie])->Void)
+    func getMovies(page: Int, move: Movement, callback: @escaping ([Movie])->Void)
+    func searchMovie(word: String, search: Search?, move: Movement, callback: @escaping (Search)->Void)
+    func setPageAndGetMovies(isForward: Bool, search: Search?, page: Int)
 }
 
 protocol HomeInteractorOutputProtocol: class {
@@ -37,7 +41,8 @@ protocol HomeInteractorOutputProtocol: class {
 protocol HomeInteractorInputProtocol: class {
     // PRESENTER -> INTERACTOR
     var presenter: HomeInteractorOutputProtocol? { get set }
-    func getMovies(page: Int, callbackSuccess: @escaping ([Movie])->Void, callbackFail: @escaping (Errors)->Void)
+    func getMovies(page: Int, move: Movement, callbackSuccess: @escaping ([Movie])->Void, callbackFail: @escaping (Errors)->Void)
+    func searchMovie(word: String, search: Search?, move: Movement, callbackSuccess: @escaping (Search)->Void, callbackFail: @escaping (Errors)->Void)
 }
 
 

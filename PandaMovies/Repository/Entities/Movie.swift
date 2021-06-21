@@ -26,6 +26,9 @@ class Movie {
     var original_language : String
     var poster_image: UIImage
     var backdrop_image: UIImage
+    var color_average_backdrop : UIColor = .white
+    var ineverse_color_average_backdrop : UIColor = .white
+    var page: Int = 1
     
     init(json: JSON, callback: @escaping ()->Void) {
         var paths: [String] = []

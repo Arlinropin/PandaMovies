@@ -20,34 +20,30 @@ class DescriptionTableViewCell: UITableViewCell {
     @IBOutlet weak var rating: UILabel!
     
     func initWithData(movie: Movie){
-        var backdropImage = movie.backdrop_image
-        if movie.backdrop_image ==  #imageLiteral(resourceName: "PandaSearch") {
-            backdropImage = movie.poster_image
-        }
-        let color = backdropImage.averageColor
-        let inverseColor = color?.inverseColor() ?? UIColor.white
-        var titleColor = UIColor.white
-        var textColor = UIColor.white
-        if (color?.isLight())! {
-            textColor = .black
-        }
-        if (inverseColor.isLight())! {
-            titleColor = .black
-        }
-        let average = round(movie.vote_average * 10) / 10.0
-
         
-        box.backgroundColor = color
-        boxS.backgroundColor = color
-        boxTitle.backgroundColor = inverseColor
+        let titleColor: UIColor = (movie.ineverse_color_average_backdrop.isLight())! ? .black:.white
+        let textColor: UIColor = (movie.color_average_backdrop.isLight())! ? .black:.white
+
+        box.backgroundColor = movie.color_average_backdrop
+        boxS.backgroundColor = movie.color_average_backdrop
+        boxTitle.backgroundColor = movie.ineverse_color_average_backdrop
         poster.image = movie.poster_image
-        backdrop.image = backdropImage
+        backdrop.image = movie.backdrop_image
         titleLabel.text = movie.title
         titleLabel.textColor = titleColor
-        descriptionLabel.text = movie.overview
-        descriptionLabel.textColor = textColor
+        
+        var text = "...".N(size: 30, color: textColor)
+        if movie.overview != "" {
+            text = "Overview: ".B(size: 21, color: textColor)
+            text.append(movie.overview.N(size: 17, color: textColor))
+        }
+        if movie.release_date != "" {
+            text.append("\n\nRealease date: ".B(size: 21, color: textColor))
+            text.append(movie.release_date.N(size: 17, color: textColor))
+        }
+        descriptionLabel.attributedText = text
         star.tintColor = #colorLiteral(red: 0.9112964272, green: 0.7747166753, blue: 0.3718485832, alpha: 1)
-        rating.text = "\(average)"
+        rating.text = "\(movie.vote_average)"
         rating.textColor = textColor
     }
 }

@@ -26,7 +26,6 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         heigthCollection.constant = height - 55
         collection.reloadData()
         backwardButton.isHidden = page == 1
-        
     }
     
     override func awakeFromNib() {

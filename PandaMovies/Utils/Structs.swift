@@ -20,10 +20,15 @@ struct ModalText {
     var message: String
 }
 
+enum Movement {
+    case forward
+    case none
+    case backward
+}
+
 // MARK: Celda
 struct Cell {
     var id: String
-    var label: String
     var value: Any
     var objects: Any
     var cellType: CellType

@@ -7,8 +7,6 @@ class Webservices {
     
     static let API_KEY = "62c0b69a63151f00955a915c48572f1a"
     
-    static let TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MmMwYjY5YTYzMTUxZjAwOTU1YTkxNWM0ODU3MmYxYSIsInN1YiI6IjYwY2U1ODViZDM5OWU2MDAyYTdhZWYwZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.otj4vye7cGx5QsThSAP9YmoDVpUzw4NKlopMNchdZ2M"
-    
     static var session : Alamofire.Session {
         get{
             let configuration = URLSessionConfiguration.default
@@ -25,6 +23,7 @@ class Webservices {
     static let MOVIES_URL_SUFFIX = "movie/popular?api_key=\(API_KEY)&language=en-US&page="
     static let GENRES_URL_SUFFIX = "genre/movie/list?api_key=\(API_KEY)&language=en-US"
     static let LANGUAGES_URL_SUFFIX = "configuration/languages?api_key=\(API_KEY)"
+    static let SEARCH_URL_SUFFIX = "search/movie?api_key=\(API_KEY)&"
 
     static func request(pathMethod : String, pathMethodXtra: String = "", callbackSuccess:@escaping (JSON?)->(), callbackFailure:@escaping (Errors)->()){
         print("// --------------------------------------------------------- ")
